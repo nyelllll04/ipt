@@ -21,6 +21,12 @@ public class Pts22022 extends JFrame {
     String pass = "";
 
     Pts22022() {
+        // Load the image
+        ImageIcon imageIcon = new ImageIcon("path/to/your/image/logo.png"); // Provide the correct path
+        imageLabel = new JLabel(imageIcon);
+        imageLabel.setBounds(50, 20, 100, 100); // Set the position and size of the image
+        add(imageLabel);
+        
         lbl1 = new JLabel("ENROLLMENT DATA");
         lbl1.setBounds(120, 20, 300, 100);
         lbl1.setFont(new Font("Arial", Font.BOLD, 24));
